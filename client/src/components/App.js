@@ -1,12 +1,14 @@
 import React from 'react';
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+import '../CSS/App.css';
 import AboutMe from './AboutMe';
+import Footer from './Footer';
 import HobbiesInterests from './HobbiesInterests';
 import Home from './Home';
+import NavBar from './NavBar';
 import Projects from './Projects';
 import WorkHistory from './WorkHistory';
-import NavBar from './NavBar';
-import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
-import '../App.css';
+
 
 function App() {
 
@@ -21,6 +23,7 @@ function App() {
         <Route path="/projects" component={Projects} />
         <Route path="/workHistory" component={WorkHistory} />
       </Switch>
+      <Footer />
     </div>
     </Router>
   );

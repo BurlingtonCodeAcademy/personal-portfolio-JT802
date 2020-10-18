@@ -11,3 +11,5 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* This file may not be needed by my portfolio specifically, but I wanted to leave it unchamged since it is the default when making a new create-react-app. */
