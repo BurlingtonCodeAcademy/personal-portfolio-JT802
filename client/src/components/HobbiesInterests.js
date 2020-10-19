@@ -2,9 +2,11 @@ import React from 'react';
 
 function HobbiesInterests() {
   return (
-    <div id='hobbies-wrapper'>
+    <div className='hobbies-wrapper'>
+    <div className='image-wrapper'>
       <img src='../Images/cat-table.jpg' id='blackCat' alt='kitten' />
-      <p>I seriously need to get a life. Am I really so mundane?</p>
+      <h3>Sleep is such a precious commodity these days.</h3>
+    </div>
     </div>
   )
 }

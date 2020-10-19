@@ -1,41 +1,124 @@
 #navigation {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px 20px 20px 20px;
+}
+
+button {
+    background-color: rgb(242, 151, 118);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
 }
 
 button:link {
     text-decoration:  none;
-    color: maroon;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-weight: bold;
-    font-size: 20px;
-}
-
-button:visited {
-    color: green;
 }
 
 button:hover {
-    color: hotpink;
-  }
+    color: gold;
+}
 
-button:active {
-    color: blue;
+.home-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+}
+
+#socialMedia {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#socialMedia a {
+    text-decoration: none;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
 }
 
 .image-wrapper {
-    margin: 50px 10px 50px 50px;
+    margin: 50px 10px 50px 10px;
     display: flex;
-    flex-wrap: wrap;
+    
+}
+
+.image-wrapper h3 {
+    margin-top: 50px;
+    height: 100px;
+}
+
+.projects-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+}
+
+#hobbies-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#hobbies-wrapper h3{
+    text-align: center;
+    font-size: 28px;
 }
 
 #profilePic {
     float: left;
-    margin: 50px 50px 50px 0px;
+    margin: 50px 15px 30px 0px;
 }
 
-#steamLocomotive {
-    width: 800px;
+.its-me {
+    display: flex;
+    flex-direction: column;
+}
+
+.its-me a{
+    text-decoration: none;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    font-size: 28px;
+}
+
+#projectList {
+    margin-top: 50px
+}
+
+#projects a {
+    text-decoration: none;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    font-size: 30px;
+    border-bottom: 2px solid black;
+}
+
+#projectList li a {
+    margin: 5 0 5 0;
+    text-decoration: none;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 28px;
+    border: none;
+}
+
+#projectList li h4 {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 28px;
+}
+
+#locomotive {
+    float: right;
+    width: 600px;
     height: 300px;
     margin: 50px 50px 50px 50px;
 }
@@ -44,22 +127,85 @@ button:active {
     width: 600px;
     height: 300px;
     margin: 50px 50px 50px 50px;
+    justify-content: center;
+    align-items: center;
 }
-  
-p {
+
+#workspace {
     display: flex;
-    margin: 50px 50px 50px 50px;
-    text-align: justify;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+#resume-wrapper {
+    display: flex;
+}
+
+#jonathan-pdf {
+    height: 650px;
+    width: 500px;
+    border: 1px solid black;
+}
+
+#workspace h4 {
+    margin-top: 10px;
+    margin-bottom: 10px;
     font-size: 28px;
 }
 
-.footer-wrapper{
-    margin-top: 1rem;
-    padding: 1rem;
+.footer-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    padding: 5px;
     background-color: rgb(235, 195, 64);
     position: fixed;
     bottom: 0;
     left: 0;
-    width: 100%;
+    width: 100%
+}
+
+.form-wrapper {
+    display: grid;
+    grid-template-columns: 200px 200px;
+    grid-template-rows: 30px .50fr 30px;
+    grid-template-areas:
+    "name email"
+    "textarea textarea"
+    "submit .";
+    height: 200px;
+    justify-content: center;
+}
+
+#name {
+    grid-area: name;
+}
+
+#email {
+    grid-area: email;
+}
+
+#textarea {
+    grid-area: textarea;
+}
+
+#submitButton {
+    grid-area: submit;
+}
+
+#questComment h5 {
+    text-align: center;
+    font-size: 16px;
+    margin: 10px 0 10px 0;
+}
+
+input:active {
+    background-color: honeydew;
+
+}
+
+textarea:active {
+    background-color: honeydew;
 }
