@@ -8,7 +8,7 @@ function WorkHistory() {
                 <a href="./Assets/JRT-2020-Resume.pdf" download>
                     <img src="../Images/resume-screenshot.png" id='jonathan-pdf' alt="Resume Screenshot" />
                 </a>
-            </div>
+            </div> {/* This gave me some inspiration for the recent homework assigned by Etienne. */}
         </div>
     )
 }

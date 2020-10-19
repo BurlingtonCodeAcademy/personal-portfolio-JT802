@@ -1,3 +1,4 @@
+/* I got the Nav Bar to persist across pages, after remembering how to import it properly. */
 #navigation {
     display: flex;
     justify-content: space-around;
@@ -26,7 +27,7 @@ button:hover {
     justify-content: center;
     align-items: center;
 }
-
+/* It's entirely possible some of this CSS overalaps, and could be better-targeted. */
 #socialMedia {
     display: flex;
     justify-content: space-around;
@@ -40,6 +41,11 @@ button:hover {
     font-size: 20px;
 }
 
+#copyright {
+    display: flex;
+    justify-content: space-evenly;
+}
+
 .image-wrapper {
     margin: 50px 10px 50px 10px;
     display: flex;
@@ -50,7 +56,7 @@ button:hover {
     margin-top: 50px;
     height: 100px;
 }
-
+/* Working with Michael to refine my CSS skills is ongoing. */
 .projects-wrapper {
     display: flex;
     flex-direction: column;
@@ -90,7 +96,7 @@ button:hover {
 }
 
 #projectList {
-    margin-top: 50px
+    margin-top: 20px
 }
 
 #projects a {
@@ -101,7 +107,7 @@ button:hover {
     font-size: 30px;
     border-bottom: 2px solid black;
 }
-
+/* I'll have to refine how I placed the project screenshots on this page. */
 #projectList li a {
     margin: 5 0 5 0;
     text-decoration: none;
@@ -129,6 +135,16 @@ button:hover {
     margin: 50px 50px 50px 50px;
     justify-content: center;
     align-items: center;
+}
+
+#guessNum {
+    width: 75px;
+    height: 75px;
+}
+
+#zorking {
+    width: 75px;
+    height: 75px;
 }
 
 #workspace {
@@ -166,7 +182,7 @@ button:hover {
     left: 0;
     width: 100%
 }
-
+/* Using a Grid inside of a Flexbox was made easier with Olivia's help.*/
 .form-wrapper {
     display: grid;
     grid-template-columns: 200px 200px;
@@ -195,7 +211,7 @@ button:hover {
     grid-area: submit;
 }
 
-#questComment h5 {
+#questComment h4 {
     text-align: center;
     font-size: 16px;
     margin: 10px 0 10px 0;
