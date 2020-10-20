@@ -1,0 +1,227 @@
+/* I got the Nav Bar to persist across pages, after remembering how to import it properly. */
+#navigation {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px 20px 20px 20px;
+}
+
+button {
+    background-color: rgb(242, 151, 118);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+}
+
+button:link {
+    text-decoration:  none;
+}
+
+button:hover {
+    color: gold;
+}
+
+.home-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+}
+/* It's entirely possible some of this CSS overalaps, and could be better-targeted. */
+#socialMedia {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#socialMedia a {
+    text-decoration: none;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+#copyright {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.image-wrapper {
+    margin: 50px 10px 50px 10px;
+    display: flex;
+    
+}
+
+.image-wrapper h3 {
+    margin-top: 50px;
+    height: 100px;
+}
+/* Working with Michael to refine my CSS skills is ongoing. */
+.projects-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+}
+
+#hobbies-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#hobbies-wrapper h3{
+    text-align: center;
+    font-size: 28px;
+}
+
+#profilePic {
+    float: left;
+    margin: 50px 15px 30px 0px;
+}
+
+.its-me {
+    display: flex;
+    flex-direction: column;
+}
+
+.its-me a{
+    text-decoration: none;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    font-size: 28px;
+}
+
+#projectList {
+    margin-top: 20px
+}
+
+#projects a {
+    text-decoration: none;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    font-size: 30px;
+    border-bottom: 2px solid black;
+}
+/* I'll have to refine how I placed the project screenshots on this page. */
+#projectList li a {
+    margin: 5 0 5 0;
+    text-decoration: none;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 28px;
+    border: none;
+}
+
+#projectList li h4 {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 28px;
+}
+
+#locomotive {
+    float: right;
+    width: 600px;
+    height: 300px;
+    margin: 50px 50px 50px 50px;
+}
+
+#blackCat {
+    width: 600px;
+    height: 300px;
+    margin: 50px 50px 50px 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+#guessNum {
+    width: 75px;
+    height: 75px;
+}
+
+#zorking {
+    width: 75px;
+    height: 75px;
+}
+
+#workspace {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+#resume-wrapper {
+    display: flex;
+}
+
+#jonathan-pdf {
+    height: 650px;
+    width: 500px;
+    border: 1px solid black;
+}
+
+#workspace h4 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 28px;
+}
+
+.footer-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    padding: 5px;
+    background-color: rgb(235, 195, 64);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%
+}
+/* Using a Grid inside of a Flexbox was made easier with Olivia's help.*/
+.form-wrapper {
+    display: grid;
+    grid-template-columns: 200px 200px;
+    grid-template-rows: 30px .50fr 30px;
+    grid-template-areas:
+    "name email"
+    "textarea textarea"
+    "submit .";
+    height: 200px;
+    justify-content: center;
+}
+
+#name {
+    grid-area: name;
+}
+
+#email {
+    grid-area: email;
+}
+
+#textarea {
+    grid-area: textarea;
+}
+
+#submitButton {
+    grid-area: submit;
+}
+
+#questComment h4 {
+    text-align: center;
+    font-size: 16px;
+    margin: 10px 0 10px 0;
+}
+
+input:active {
+    background-color: honeydew;
+
+}
+
+textarea:active {
+    background-color: honeydew;
+}
