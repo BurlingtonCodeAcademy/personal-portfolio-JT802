@@ -1,3 +1,4 @@
+//Here's all the imports
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import '../CSS/App.css';
@@ -12,7 +13,7 @@ import WorkHistory from './WorkHistory';
 // Here's a shout-out to Todd K for inspiring me to look further into using React router-dom.
 
 function App() {
-
+  //In the return statement, react-router-dom is used to navigate through the portfoliio
   return (
     <Router>
       <div>

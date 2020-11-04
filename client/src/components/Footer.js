@@ -5,7 +5,7 @@ function Footer() {
     return (
         <div className="footer-wrapper">
             <div id='questComment'>
-                <h4>Questions or comments? Get in touch!</h4>
+                <span>Questions or comments? Get in touch!</span>
             </div>
             <div> {/* Olivia helped me get this footer laid out satisfactorily. I found it to be the toughest part of this project. */}
                 <form className="form-wrapper">
@@ -13,6 +13,8 @@ function Footer() {
                     <input id="email" type="text" placeholder="Email" />
                     <textarea id="textarea" placeholder="Message"></textarea>
                     <button id="submitButton" type="button">Submit</button>
+                    {/* What if someone wants to actually use this form to get in touch with me? */}
+                    {/* How can I make the Submit button actually send the information somewhere? */}
                 </form>
             </div> {/* Thanks to GJ for providing the social-media icons from an earlier project. */}
             <div id='socialMedia'>
