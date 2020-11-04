@@ -13,7 +13,7 @@ function Projects() {
                     {/* Zorkington */}
                     <li><a href='https://github.com/JT802/zorkington-hope-jeff'>Here's a variant on the popular 'Zork' text adventure</a>  <img src='../Images/zork-text.png' id='zorking' alt='' /></li>
                     {/* Yelpington */}
-                    <ii><a href="https://github.com/JT802/yelpington-JT802">Yelpington: a VT-style Yelp app</a></ii>
+                    <li><a href="https://github.com/JT802/yelpington-JT802">Yelpington: a VT-style Yelp app</a></li>
                     <li><h4>A mock blog-site project is coming soon.</h4></li>
                     {/* Remock-JT802 will be placed as the third project after I have resubmitted it. */}
                     <li><h4>A simple Tic-Tac-Toe project is coming soon.</h4></li>

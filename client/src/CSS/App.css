@@ -1,7 +1,6 @@
 /* I got the Nav Bar to persist across pages, after remembering how to import it properly. */
 body {
     margin: 0;
-    padding: 0;
 }
 
 #navigation {
@@ -184,7 +183,7 @@ button:hover {
     background-color: rgb(235, 195, 64);
     bottom: 0;
     left: 0;
-    width: 100vw
+    width: 99vw
 }
 /* Using a Grid inside of a Flexbox was made easier with Olivia's help.*/
 .form-wrapper {
@@ -209,6 +208,7 @@ button:hover {
 
 #textarea {
     grid-area: textarea;
+    resize: none;
 }
 
 #submitButton {
@@ -216,6 +216,9 @@ button:hover {
 }
 
 #questComment h4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     font-size: 16px;
     margin: 10px 0 10px 0;
