@@ -26,7 +26,7 @@ function Footer() {
                 <a href='https://www.twitter.com/PhoenixDev802'><img src='../Icons/twitter.png' id='bird' alt='' />Twitter</a>
             </div>
             <div id='copyright'> {/* In case Bob or the TAs wonder, Eli Crow is my partner, and he wanted to contribute to this project. */}
-                <h3>| Website (C) Jonathan R. Tresch, 2020 |</h3><h3>| Additional photography by Eli Crow, 2018-2020 |</h3>
+                <h5>| Website (C) Jonathan R. Tresch, 2020 |</h5><h5>| Additional photography by Eli Crow, 2018-2020 |</h5>
             </div>
         </div>
     )

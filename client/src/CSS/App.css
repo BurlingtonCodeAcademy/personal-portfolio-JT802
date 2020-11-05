@@ -1,5 +1,7 @@
 /* I got the Nav Bar to persist across pages, after remembering how to import it properly. */
+
 body {
+    padding: 0;
     margin: 0;
 }
 
@@ -10,14 +12,18 @@ body {
     margin: 20px 20px 20px 20px;
 }
 
+h5 {
+    margin: 20 0 20 0;
+}
+
 button {
     background-color: rgb(242, 151, 118);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 button:link {
-    text-decoration:  none;
+    text-decoration: none;
 }
 
 button:hover {
@@ -27,11 +33,14 @@ button:hover {
 .home-wrapper {
     display: flex;
     flex-direction: column;
-    width: 100vw;
+    width: 90vw;
     justify-content: center;
     align-items: center;
+    margin: 0 0
 }
+
 /* It's entirely possible some of this CSS overalaps, and could be better-targeted. */
+
 #socialMedia {
     display: flex;
     justify-content: space-around;
@@ -42,29 +51,34 @@ button:hover {
     text-decoration: none;
     color: black;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 #copyright {
     display: flex;
     justify-content: space-evenly;
+    padding: 0;
+    margin: 0
 }
 
 .image-wrapper {
-    margin: 50px 10px 50px 10px;
+    margin: 50 0 0 100;
     display: flex;
-    
+    justify-content: center;
 }
 
 .image-wrapper h3 {
-    margin-top: 50px;
+    margin: 50px;
     height: 100px;
+    text-align: justify;
 }
+
 /* Working with Michael to refine my CSS skills is ongoing. */
+
 .projects-wrapper {
     display: flex;
     flex-direction: column;
-    margin-top: 100px;
+    margin-top: 80px;
     width: 100vw;
     justify-content: center;
     align-items: center;
@@ -74,10 +88,9 @@ button:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
-#hobbies-wrapper h3{
+#hobbies-wrapper h3 {
     text-align: center;
     font-size: 28px;
 }
@@ -90,13 +103,14 @@ button:hover {
 .its-me {
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 
-.its-me a{
+.its-me a {
     text-decoration: none;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: bold;
-    font-size: 28px;
+    font-size: 24px;
 }
 
 #projectList {
@@ -111,7 +125,9 @@ button:hover {
     font-size: 30px;
     border-bottom: 2px solid black;
 }
+
 /* I'll have to refine how I placed the project screenshots on this page. */
+
 #projectList li a {
     margin: 5 0 5 0;
     text-decoration: none;
@@ -164,7 +180,7 @@ button:hover {
 }
 
 #jonathan-pdf {
-    height: 650px;
+    height: 600px;
     width: 500px;
     border: 1px solid black;
 }
@@ -176,26 +192,21 @@ button:hover {
 }
 
 .footer-wrapper {
-    display: flex;
-    flex-direction: column;
-    margin: 5px;
-    padding: 5px;
+    margin-top: .3rem;
     background-color: rgb(235, 195, 64);
+    position: fixed;
     bottom: 0;
     left: 0;
-    width: 99vw
+    width: 100%;
 }
+
 /* Using a Grid inside of a Flexbox was made easier with Olivia's help.*/
+
 .form-wrapper {
-    display: grid;
-    grid-template-columns: 200px 200px;
-    grid-template-rows: 30px .50fr 30px;
-    grid-template-areas:
-    "name email"
-    "textarea textarea"
-    "submit .";
-    height: 200px;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 #name {
@@ -215,18 +226,14 @@ button:hover {
     grid-area: submit;
 }
 
-#questComment h4 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    font-size: 16px;
-    margin: 10px 0 10px 0;
+h4 {
+    
+    font-size: 14px;
+    margin: 0
 }
 
 input:active {
     background-color: honeydew;
-
 }
 
 textarea:active {
