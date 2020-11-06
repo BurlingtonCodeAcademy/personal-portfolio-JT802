@@ -192,38 +192,45 @@ button:hover {
 }
 
 .footer-wrapper {
-    margin-top: .3rem;
-    background-color: rgb(235, 195, 64);
+    background-color: rgb(254, 222, 119);
     position: fixed;
     bottom: 0;
     left: 0;
-    width: 100%;
+    width: 100vw;
 }
 
-/* Using a Grid inside of a Flexbox was made easier with Olivia's help.*/
+#questComment {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* Start putting the CSS into page-layout order */
 
 .form-wrapper {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 11vh;
+    width: 100vw
 }
 
-#name {
-    grid-area: name;
-}
-
-#email {
-    grid-area: email;
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 11vh;
+    width: 35vw
 }
 
 #textarea {
-    grid-area: textarea;
     resize: none;
 }
 
-#submitButton {
-    grid-area: submit;
+#burly, #mail, #phone, #instagram, #effbee, #bird {
+    width: 1.3rem;
 }
 
 h4 {
