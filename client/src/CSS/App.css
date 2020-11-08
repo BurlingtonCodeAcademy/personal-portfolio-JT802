@@ -1,15 +1,8 @@
-/* I got the Nav Bar to persist across pages, after remembering how to import it properly. */
+/* ------ Global styles ------ */
 
 body {
     padding: 0;
     margin: 0;
-}
-
-#navigation {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin: 20px 20px 20px 20px;
 }
 
 h5 {
@@ -30,6 +23,30 @@ button:hover {
     color: gold;
 }
 
+h4 {
+    font-size: 14px;
+    margin: 0
+}
+
+input:active {
+    background-color: honeydew;
+}
+
+textarea:active {
+    background-color: honeydew;
+}
+
+/* ------ Navigation Bar persists across pages ------ */
+
+#navigation {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px 20px 20px 20px;
+}
+
+/* ------ Home page styles ------ */
+
 .home-wrapper {
     display: flex;
     flex-direction: column;
@@ -37,28 +54,6 @@ button:hover {
     justify-content: center;
     align-items: center;
     margin: 0 0
-}
-
-/* It's entirely possible some of this CSS overalaps, and could be better-targeted. */
-
-#socialMedia {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-#socialMedia a {
-    text-decoration: none;
-    color: black;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;
-}
-
-#copyright {
-    display: flex;
-    justify-content: space-evenly;
-    padding: 0;
-    margin: 0
 }
 
 .image-wrapper {
@@ -71,28 +66,6 @@ button:hover {
     margin: 50px;
     height: 100px;
     text-align: justify;
-}
-
-/* Working with Michael to refine my CSS skills is ongoing. */
-
-.projects-wrapper {
-    display: flex;
-    flex-direction: column;
-    margin-top: 80px;
-    width: 100vw;
-    justify-content: center;
-    align-items: center;
-}
-
-#hobbies-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#hobbies-wrapper h3 {
-    text-align: center;
-    font-size: 28px;
 }
 
 #profilePic {
@@ -113,6 +86,47 @@ button:hover {
     font-size: 24px;
 }
 
+/* ------ About Me page styles ------ */
+
+#locomotive {
+    float: right;
+    width: 600px;
+    height: 300px;
+    margin: 50px 50px 50px 50px;
+}
+
+/* ------ Hobbies page styles ------ */
+
+#blackCat {
+    width: 600px;
+    height: 300px;
+    margin: 50px 50px 50px 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+#hobbies-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#hobbies-wrapper h3 {
+    text-align: center;
+    font-size: 28px;
+}
+
+/* ------ Projects page styles ------ */
+
+.projects-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-top: 80px;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+}
+
 #projectList {
     margin-top: 20px
 }
@@ -125,8 +139,6 @@ button:hover {
     font-size: 30px;
     border-bottom: 2px solid black;
 }
-
-/* I'll have to refine how I placed the project screenshots on this page. */
 
 #projectList li a {
     margin: 5 0 5 0;
@@ -142,20 +154,7 @@ button:hover {
     font-size: 28px;
 }
 
-#locomotive {
-    float: right;
-    width: 600px;
-    height: 300px;
-    margin: 50px 50px 50px 50px;
-}
-
-#blackCat {
-    width: 600px;
-    height: 300px;
-    margin: 50px 50px 50px 50px;
-    justify-content: center;
-    align-items: center;
-}
+/* Project screenshots thus far */
 
 #guessNum {
     width: 75px;
@@ -166,6 +165,8 @@ button:hover {
     width: 75px;
     height: 75px;
 }
+
+/* ------Work History page styles ------ */
 
 #workspace {
     display: flex;
@@ -191,6 +192,8 @@ button:hover {
     font-size: 28px;
 }
 
+/* ------ Footer section ------ */
+
 .footer-wrapper {
     background-color: rgb(254, 222, 119);
     position: fixed;
@@ -205,8 +208,6 @@ button:hover {
     text-align: center;
     margin: 10px 0px;
 }
-
-/* Start putting the CSS into page-layout order */
 
 .form-wrapper {
     display: flex;
@@ -230,21 +231,30 @@ button:hover {
     resize: none;
 }
 
-/*  These six below are the social media buttons */
-#burly, #mail, #phone, #instagram, #effbee, #bird {
-    width: 1.3rem;
+/* ------ Social media section ------ */
+
+#socialMedia {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
-h4 {
-    
-    font-size: 14px;
+#socialMedia a {
+    text-decoration: none;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+#copyright {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0;
     margin: 0
 }
 
-input:active {
-    background-color: honeydew;
-}
+/* Social media buttons */
 
-textarea:active {
-    background-color: honeydew;
+#burly, #mail, #phone, #instagram, #effbee, #bird {
+    width: 1.3rem;
 }
