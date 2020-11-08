@@ -203,7 +203,7 @@ button:hover {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     text-align: center;
-    margin-bottom: 10px;
+    margin: 10px 0px;
 }
 
 /* Start putting the CSS into page-layout order */
@@ -226,9 +226,11 @@ button:hover {
 }
 
 #textarea {
+    font-family: Arial, Helvetica, sans-serif;
     resize: none;
 }
 
+/*  These six below are the social media buttons */
 #burly, #mail, #phone, #instagram, #effbee, #bird {
     width: 1.3rem;
 }

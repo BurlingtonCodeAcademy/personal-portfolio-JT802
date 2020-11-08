@@ -10,10 +10,12 @@ function Footer() {
             <div> {/* Olivia helped me get this footer laid out satisfactorily. I found it to be the toughest part of this project. */}
                 <form className="form-wrapper">
                     <div className="contact">
-                    <input id="name" type="text" placeholder="Name" />
-                    <input id="email" type="text" placeholder="Email" />
-                    <textarea id="textarea" maxLength="500" cols="30" rows="15" placeholder="Message"></textarea>
-                    <button id="submitButton" type="button">Submit</button>
+                        <div className="input-wrapper">
+                            <input id="name" type="text" placeholder="Name" />
+                            <input id="email" type="text" placeholder="Email" />
+                        </div>
+                        <textarea id="textarea" maxLength="500" cols="41" rows="15" placeholder="Message"></textarea>
+                        <button id="submitButton" type="button">Submit</button>
                     </div>
                     {/* What if someone wants to actually use this form to get in touch with me? */}
                     {/* How can I make the Submit button actually send the information somewhere? */}
