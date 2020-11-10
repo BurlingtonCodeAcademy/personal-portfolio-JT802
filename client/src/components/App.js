@@ -13,7 +13,7 @@ import WorkHistory from './WorkHistory';
 // Here's a shout-out to Todd K for inspiring me to look further into using React router-dom.
 
 function App() {
-  //In the return statement, react-router-dom is used to navigate through the portfoliio
+  //In the return statement, react-router-dom is used to navigate through the app
   return (
     <Router>
       <div>
